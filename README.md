@@ -1,18 +1,21 @@
-# Risa Ohara Resume Profile
+# Hi, I'm Risa
 
-太原 莉彩の自己紹介・実績・経験をまとめたレジュメサイトです。
+This is my personal resume/profile site.
 
-## Overview
+I made it to keep my background, interests, and experiences in one clean place. I am currently studying mathematics at De Anza College and spending my student life between academics, badminton, and community work.
 
-- De Anza College / Mathematics
-- 2029年卒業予定
-- バドミントン州大会チーム優勝、個人2位
-- 関心領域: マーケティング、データ分析、サイエンス、テクノロジーを活用した課題解決
+## A little about me
 
-## Site
+- Mathematics major at De Anza College
+- Expected graduation: 2029
+- 14 years of badminton experience
+- State tournament team champion and individual runner-up
+- Interested in marketing, data analysis, technology, and solving real-world problems
 
-This repository contains a static resume website built with HTML and CSS.
+I wanted the site to feel simple, warm, and easy to read, so I built it with plain HTML, CSS, and a small language switcher for Japanese and English.
 
-Live site: https://roinoah.github.io/profile/
+## Website
 
-Open `index.html` directly, or host the repository with GitHub Pages.
+You can view it here:
+
+https://roinoah.github.io/profile/
