@@ -13,4 +13,6 @@
 
 This repository contains a static resume website built with HTML and CSS.
 
+Live site: https://roinoah.github.io/profile/
+
 Open `index.html` directly, or host the repository with GitHub Pages.
