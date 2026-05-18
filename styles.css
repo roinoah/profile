@@ -520,11 +520,9 @@ h3 {
 .panel {
   min-height: 100%;
   padding: clamp(26px, 4vw, 42px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid #eed6d6;
   border-radius: 8px;
-  background:
-    linear-gradient(145deg, rgba(255, 250, 242, 0.6), rgba(255, 229, 194, 0.4)),
-    rgba(255, 255, 255, 0.5);
+  background: linear-gradient(145deg, #fae6e6, #efd4d4);
   box-shadow: var(--soft-shadow);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -533,10 +531,8 @@ h3 {
 
 .panel:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(118, 138, 113, 0.15);
-  background:
-    linear-gradient(145deg, rgba(255, 250, 242, 0.7), rgba(255, 229, 194, 0.5)),
-    rgba(255, 255, 255, 0.6);
+  box-shadow: 0 16px 40px rgba(173, 192, 187, 0.15);
+  background: linear-gradient(145deg, #fdf0f0, #f4dbdb);
 }
 
 .panel.accent {
