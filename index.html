@@ -16,16 +16,22 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="トップへ">
+      <a class="brand" href="#top" aria-label="トップへ" data-label-ja="トップへ" data-label-en="Back to top">
         <span class="brand-mark">R</span>
         <span>Risa Ohara</span>
       </a>
-      <nav class="nav" aria-label="ページ内ナビゲーション">
-        <a href="#strengths">強み</a>
-        <a href="#experience">経験</a>
-        <a href="#skills">スキル</a>
-        <a href="#goals">将来像</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav" aria-label="ページ内ナビゲーション" data-label-ja="ページ内ナビゲーション" data-label-en="Page navigation">
+          <a href="#strengths" data-i18n="nav.strengths">強み</a>
+          <a href="#experience" data-i18n="nav.experience">経験</a>
+          <a href="#skills" data-i18n="nav.skills">スキル</a>
+          <a href="#goals" data-i18n="nav.goals">将来像</a>
+        </nav>
+        <div class="language-switch" aria-label="言語切替" data-label-ja="言語切替" data-label-en="Language switch">
+          <button class="lang-button is-active" type="button" data-lang="ja" aria-pressed="true">JP</button>
+          <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
@@ -40,8 +46,8 @@
           </div>
           <div class="court-lines"></div>
           <div class="score-card">
-            <span class="score-label">State Champion Goal</span>
-            <strong>Team 1st / Individual 2nd</strong>
+            <span class="score-label" data-i18n="hero.scoreLabel">State Champion Goal</span>
+            <strong data-i18n="hero.score">Team 1st / Individual 2nd</strong>
           </div>
           <div class="profile-orbit">
             <span>Math</span>
@@ -51,54 +57,54 @@
         </div>
         <div class="hero-content">
           <p class="eyebrow">De Anza College / Mathematics</p>
-          <h1 id="hero-title">太原 莉彩</h1>
-          <p class="lead">
+          <h1 id="hero-title" data-i18n="hero.name">太原 莉彩</h1>
+          <p class="lead" data-i18n="hero.lead">
             シリコンバレーで学び、競技・学業・学生団体運営に全力で取り組む学生です。
             バドミントンで培った分析力と完遂力を活かし、課題の本質を見極めて成果につなげます。
           </p>
-          <div class="hero-meta" aria-label="主要プロフィール">
-            <span>2029年卒</span>
+          <div class="hero-meta" aria-label="主要プロフィール" data-label-ja="主要プロフィール" data-label-en="Profile highlights">
+            <span data-i18n="hero.metaGraduation">2029年卒</span>
             <span>Python</span>
-            <span>週35時間稼働可</span>
+            <span data-i18n="hero.metaAvailability">週35時間稼働可</span>
           </div>
           <div class="hero-actions">
-            <a class="button primary" href="#summary">プロフィールを見る</a>
-            <a class="button secondary" href="#contact">基本情報</a>
-            <button class="button secondary" type="button" onclick="window.print()">PDF保存</button>
+            <a class="button primary" href="#summary" data-i18n="hero.ctaProfile">プロフィールを見る</a>
+            <a class="button secondary" href="#contact" data-i18n="hero.ctaInfo">基本情報</a>
+            <button class="button secondary" type="button" onclick="window.print()" data-i18n="hero.ctaPdf">PDF保存</button>
           </div>
         </div>
       </section>
 
-      <section id="summary" class="section summary-grid" aria-label="プロフィール概要">
+      <section id="summary" class="section summary-grid" aria-label="プロフィール概要" data-label-ja="プロフィール概要" data-label-en="Profile summary">
         <article class="summary-card summary-feature">
           <p class="summary-number">2029</p>
-          <h2>卒業予定年度</h2>
-          <p>De Anza Collegeで数学を専攻。海外での学びを通じ、テクノロジーと社会課題への関心を深めています。</p>
+          <h2 data-i18n="summary.gradTitle">卒業予定年度</h2>
+          <p data-i18n="summary.gradText">De Anza Collegeで数学を専攻。海外での学びを通じ、テクノロジーと社会課題への関心を深めています。</p>
         </article>
         <article class="summary-card">
-          <p class="summary-number">14年</p>
-          <h2>競技経験</h2>
-          <p>バドミントンに長く打ち込み、州大会チーム優勝・個人2位を達成しました。</p>
+          <p class="summary-number" data-i18n="summary.yearsNumber">14年</p>
+          <h2 data-i18n="summary.yearsTitle">競技経験</h2>
+          <p data-i18n="summary.yearsText">バドミントンに長く打ち込み、州大会チーム優勝・個人2位を達成しました。</p>
         </article>
         <article class="summary-card">
           <p class="summary-number">35h</p>
-          <h2>週の稼働目安</h2>
-          <p>週4日、合計35時間程度の長期インターンに参加可能です。</p>
+          <h2 data-i18n="summary.hoursTitle">週の稼働目安</h2>
+          <p data-i18n="summary.hoursText">週4日、合計35時間程度の長期インターンに参加可能です。</p>
         </article>
       </section>
 
       <section id="strengths" class="section split">
         <div>
           <p class="section-kicker">Strengths</p>
-          <h2>客観的に状況を読み、勝ち筋を設計する</h2>
-          <p class="section-note">スポーツで磨いた観察、仮説、実行のサイクルを、仕事の課題解決にも転用します。</p>
+          <h2 data-i18n="strengths.title">客観的に状況を読み、勝ち筋を設計する</h2>
+          <p class="section-note" data-i18n="strengths.note">スポーツで磨いた観察、仮説、実行のサイクルを、仕事の課題解決にも転用します。</p>
         </div>
         <div class="text-stack">
-          <p>
+          <p data-i18n="strengths.body1">
             私の強みは、14年間のバドミントン経験で磨いた客観的な分析力と戦略立案力です。
             試合中に相手の弱点と自分の強みを見極め、状況に応じたプレーを選択することで、格上の相手にも勝利してきました。
           </p>
-          <p>
+          <p data-i18n="strengths.body2">
             仕事においても、目の前の課題を感覚だけで判断せず、情報を整理しながら本質を見つけ、成果につながる行動へ落とし込みます。
           </p>
         </div>
@@ -107,15 +113,15 @@
       <section id="experience" class="section experience">
         <div class="section-heading">
           <p class="section-kicker">Experience</p>
-          <h2>学生時代に力を入れたこと</h2>
-          <p>競技・学業・団体運営を同時に走らせる中で、負荷が高い状況でも成果を落とさない自己管理力を磨きました。</p>
+          <h2 data-i18n="experience.title">学生時代に力を入れたこと</h2>
+          <p data-i18n="experience.intro">競技・学業・団体運営を同時に走らせる中で、負荷が高い状況でも成果を落とさない自己管理力を磨きました。</p>
         </div>
         <div class="timeline">
           <article class="timeline-item">
             <span class="timeline-dot"></span>
             <div>
-              <h3>州大会優勝を目指したバドミントン</h3>
-              <p>
+              <h3 data-i18n="experience.badmintonTitle">州大会優勝を目指したバドミントン</h3>
+              <p data-i18n="experience.badmintonText">
                 学生アスリートとして高い目標を掲げ、練習・遠征・学業を両立。
                 チーム優勝、個人2位という成果を残しました。
               </p>
@@ -124,8 +130,8 @@
           <article class="timeline-item">
             <span class="timeline-dot"></span>
             <div>
-              <h3>日本人学生団体の運営</h3>
-              <p>
+              <h3 data-i18n="experience.communityTitle">日本人学生団体の運営</h3>
+              <p data-i18n="experience.communityText">
                 カリフォルニア州の日本人学生団体で「情報の民主化」を掲げ、留学生が有意義な機会を逃さないための情報発信と運営に携わりました。
               </p>
             </div>
@@ -133,8 +139,8 @@
           <article class="timeline-item">
             <span class="timeline-dot"></span>
             <div>
-              <h3>負荷の高い環境での自己管理</h3>
-              <p>
+              <h3 data-i18n="experience.managementTitle">負荷の高い環境での自己管理</h3>
+              <p data-i18n="experience.managementText">
                 練習の合間や移動時間を、情報整理・ミーティング調整・SNS更新などに細分化。
                 隙間時間を定型化し、団体タスクを遅延なく完遂しました。
               </p>
@@ -146,16 +152,16 @@
       <section class="section two-column">
         <article class="panel">
           <p class="section-kicker">Growth</p>
-          <h2>弱みへの向き合い方</h2>
-          <p>
+          <h2 data-i18n="growth.title">弱みへの向き合い方</h2>
+          <p data-i18n="growth.body">
             思考することが習慣化しているため、慎重になりすぎて行動が遅れることがあります。
             現在は「まずは6割の完成度で素早く動く」という時間制限を設け、分析の質とスピードを両立する意識で取り組んでいます。
           </p>
         </article>
         <article id="goals" class="panel accent">
           <p class="section-kicker">Vision</p>
-          <h2>この先やりたいこと</h2>
-          <p>
+          <h2 data-i18n="vision.title">この先やりたいこと</h2>
+          <p data-i18n="vision.body">
             シリコンバレーで進化し続けるテクノロジーに触れた経験を活かし、最先端の技術や考え方を身近な課題解決へ結びつけられる人材を目指しています。
             将来は日本と海外をつなぐ架け橋としても貢献したいです。
           </p>
@@ -165,36 +171,36 @@
       <section id="skills" class="section skills-section">
         <div class="section-heading">
           <p class="section-kicker">Skills & Interests</p>
-          <h2>経験・スキル・関心領域</h2>
+          <h2 data-i18n="skills.title">経験・スキル・関心領域</h2>
         </div>
         <div class="skills-layout">
           <div class="skill-block">
-            <h3>経験</h3>
+            <h3 data-i18n="skills.experienceTitle">経験</h3>
             <ul class="tag-list">
-              <li>留学</li>
-              <li>体育会</li>
-              <li>学生団体</li>
-              <li>ボランティア</li>
-              <li>サークル</li>
-              <li>アルバイト</li>
+              <li data-i18n="skills.studyAbroad">留学</li>
+              <li data-i18n="skills.athletics">体育会</li>
+              <li data-i18n="skills.studentOrg">学生団体</li>
+              <li data-i18n="skills.volunteer">ボランティア</li>
+              <li data-i18n="skills.club">サークル</li>
+              <li data-i18n="skills.partTime">アルバイト</li>
             </ul>
           </div>
           <div class="skill-block">
-            <h3>スキル</h3>
+            <h3 data-i18n="skills.skillsTitle">スキル</h3>
             <ul class="tag-list">
               <li>Python</li>
-              <li>プログラミング基礎</li>
-              <li>分析</li>
-              <li>戦略立案</li>
-              <li>タスク管理</li>
+              <li data-i18n="skills.programming">プログラミング基礎</li>
+              <li data-i18n="skills.analysis">分析</li>
+              <li data-i18n="skills.strategy">戦略立案</li>
+              <li data-i18n="skills.taskManagement">タスク管理</li>
             </ul>
           </div>
           <div class="skill-block">
-            <h3>興味のある職種</h3>
+            <h3 data-i18n="skills.rolesTitle">興味のある職種</h3>
             <ul class="tag-list">
-              <li>マーケター</li>
-              <li>サイエンティスト</li>
-              <li>アナリスト</li>
+              <li data-i18n="skills.marketer">マーケター</li>
+              <li data-i18n="skills.scientist">サイエンティスト</li>
+              <li data-i18n="skills.analyst">アナリスト</li>
             </ul>
           </div>
         </div>
@@ -203,28 +209,28 @@
       <section id="contact" class="section contact">
         <div>
           <p class="section-kicker">Profile</p>
-          <h2>基本情報</h2>
+          <h2 data-i18n="profile.title">基本情報</h2>
         </div>
         <dl class="profile-list">
           <div>
-            <dt>氏名</dt>
-            <dd>太原 莉彩 / オオハラ リサ</dd>
+            <dt data-i18n="profile.nameLabel">氏名</dt>
+            <dd data-i18n="profile.nameValue">太原 莉彩 / オオハラ リサ</dd>
           </div>
           <div>
-            <dt>生年月日</dt>
-            <dd>2003年2月19日</dd>
+            <dt data-i18n="profile.birthLabel">生年月日</dt>
+            <dd data-i18n="profile.birthValue">2003年2月19日</dd>
           </div>
           <div>
-            <dt>学校</dt>
+            <dt data-i18n="profile.schoolLabel">学校</dt>
             <dd>De Anza College / Mathematics</dd>
           </div>
           <div>
-            <dt>希望</dt>
-            <dd>長期インターン、週4日・週35時間程度、2〜3ヶ月継続可能</dd>
+            <dt data-i18n="profile.preferenceLabel">希望</dt>
+            <dd data-i18n="profile.preferenceValue">長期インターン、週4日・週35時間程度、2〜3ヶ月継続可能</dd>
           </div>
           <div>
-            <dt>最寄駅</dt>
-            <dd>五反田駅（JR山手線）</dd>
+            <dt data-i18n="profile.stationLabel">最寄駅</dt>
+            <dd data-i18n="profile.stationValue">五反田駅（JR山手線）</dd>
           </div>
         </dl>
       </section>
@@ -232,7 +238,221 @@
 
     <footer class="footer">
       <p>Risa Ohara Resume Profile</p>
-      <a href="#top">ページ上部へ</a>
+      <a href="#top" data-i18n="footer.top">ページ上部へ</a>
     </footer>
+
+    <script>
+      const translations = {
+        ja: {
+          meta: {
+            title: "太原 莉彩 | Resume Profile",
+            description: "De Anza Collegeで数学を学ぶ太原莉彩の自己紹介・実績・経験をまとめたレジュメサイトです。",
+          },
+          nav: { strengths: "強み", experience: "経験", skills: "スキル", goals: "将来像" },
+          hero: {
+            scoreLabel: "State Champion Goal",
+            score: "Team 1st / Individual 2nd",
+            name: "太原 莉彩",
+            lead: "シリコンバレーで学び、競技・学業・学生団体運営に全力で取り組む学生です。バドミントンで培った分析力と完遂力を活かし、課題の本質を見極めて成果につなげます。",
+            metaGraduation: "2029年卒",
+            metaAvailability: "週35時間稼働可",
+            ctaProfile: "プロフィールを見る",
+            ctaInfo: "基本情報",
+            ctaPdf: "PDF保存",
+          },
+          summary: {
+            gradTitle: "卒業予定年度",
+            gradText: "De Anza Collegeで数学を専攻。海外での学びを通じ、テクノロジーと社会課題への関心を深めています。",
+            yearsNumber: "14年",
+            yearsTitle: "競技経験",
+            yearsText: "バドミントンに長く打ち込み、州大会チーム優勝・個人2位を達成しました。",
+            hoursTitle: "週の稼働目安",
+            hoursText: "週4日、合計35時間程度の長期インターンに参加可能です。",
+          },
+          strengths: {
+            title: "客観的に状況を読み、勝ち筋を設計する",
+            note: "スポーツで磨いた観察、仮説、実行のサイクルを、仕事の課題解決にも転用します。",
+            body1: "私の強みは、14年間のバドミントン経験で磨いた客観的な分析力と戦略立案力です。試合中に相手の弱点と自分の強みを見極め、状況に応じたプレーを選択することで、格上の相手にも勝利してきました。",
+            body2: "仕事においても、目の前の課題を感覚だけで判断せず、情報を整理しながら本質を見つけ、成果につながる行動へ落とし込みます。",
+          },
+          experience: {
+            title: "学生時代に力を入れたこと",
+            intro: "競技・学業・団体運営を同時に走らせる中で、負荷が高い状況でも成果を落とさない自己管理力を磨きました。",
+            badmintonTitle: "州大会優勝を目指したバドミントン",
+            badmintonText: "学生アスリートとして高い目標を掲げ、練習・遠征・学業を両立。チーム優勝、個人2位という成果を残しました。",
+            communityTitle: "日本人学生団体の運営",
+            communityText: "カリフォルニア州の日本人学生団体で「情報の民主化」を掲げ、留学生が有意義な機会を逃さないための情報発信と運営に携わりました。",
+            managementTitle: "負荷の高い環境での自己管理",
+            managementText: "練習の合間や移動時間を、情報整理・ミーティング調整・SNS更新などに細分化。隙間時間を定型化し、団体タスクを遅延なく完遂しました。",
+          },
+          growth: {
+            title: "弱みへの向き合い方",
+            body: "思考することが習慣化しているため、慎重になりすぎて行動が遅れることがあります。現在は「まずは6割の完成度で素早く動く」という時間制限を設け、分析の質とスピードを両立する意識で取り組んでいます。",
+          },
+          vision: {
+            title: "この先やりたいこと",
+            body: "シリコンバレーで進化し続けるテクノロジーに触れた経験を活かし、最先端の技術や考え方を身近な課題解決へ結びつけられる人材を目指しています。将来は日本と海外をつなぐ架け橋としても貢献したいです。",
+          },
+          skills: {
+            title: "経験・スキル・関心領域",
+            experienceTitle: "経験",
+            studyAbroad: "留学",
+            athletics: "体育会",
+            studentOrg: "学生団体",
+            volunteer: "ボランティア",
+            club: "サークル",
+            partTime: "アルバイト",
+            skillsTitle: "スキル",
+            programming: "プログラミング基礎",
+            analysis: "分析",
+            strategy: "戦略立案",
+            taskManagement: "タスク管理",
+            rolesTitle: "興味のある職種",
+            marketer: "マーケター",
+            scientist: "サイエンティスト",
+            analyst: "アナリスト",
+          },
+          profile: {
+            title: "基本情報",
+            nameLabel: "氏名",
+            nameValue: "太原 莉彩 / オオハラ リサ",
+            birthLabel: "生年月日",
+            birthValue: "2003年2月19日",
+            schoolLabel: "学校",
+            preferenceLabel: "希望",
+            preferenceValue: "長期インターン、週4日・週35時間程度、2〜3ヶ月継続可能",
+            stationLabel: "最寄駅",
+            stationValue: "五反田駅（JR山手線）",
+          },
+          footer: { top: "ページ上部へ" },
+          labels: {
+            top: "トップへ",
+            nav: "ページ内ナビゲーション",
+            switch: "言語切替",
+            highlights: "主要プロフィール",
+            summary: "プロフィール概要",
+          },
+        },
+        en: {
+          meta: {
+            title: "Risa Ohara | Resume Profile",
+            description: "A resume profile website for Risa Ohara, a mathematics student at De Anza College.",
+          },
+          nav: { strengths: "Strengths", experience: "Experience", skills: "Skills", goals: "Vision" },
+          hero: {
+            scoreLabel: "State Champion Goal",
+            score: "Team 1st / Individual 2nd",
+            name: "Risa Ohara",
+            lead: "I am a De Anza College student in Silicon Valley balancing athletics, academics, and student organization leadership. I use the analytical thinking and follow-through I developed through badminton to identify the core of a problem and turn it into results.",
+            metaGraduation: "Class of 2029",
+            metaAvailability: "Available 35h/week",
+            ctaProfile: "View Profile",
+            ctaInfo: "Basic Info",
+            ctaPdf: "Save PDF",
+          },
+          summary: {
+            gradTitle: "Expected Graduation",
+            gradText: "Mathematics major at De Anza College. Studying abroad has deepened my interest in technology and practical problem solving.",
+            yearsNumber: "14 yrs",
+            yearsTitle: "Athletic Experience",
+            yearsText: "Fourteen years of badminton experience, including a state tournament team championship and individual second place.",
+            hoursTitle: "Weekly Availability",
+            hoursText: "Available for a long-term internship around 4 days and 35 hours per week.",
+          },
+          strengths: {
+            title: "Reading situations objectively and designing a path to win",
+            note: "I apply the observe, hypothesize, and execute cycle I developed through sports to business problem solving.",
+            body1: "My strength is objective analysis and strategic planning, built through 14 years of badminton. During matches, I learned to identify an opponent's weaknesses and my own advantages, then choose the right play for the situation. That mindset helped me win against stronger opponents.",
+            body2: "At work, I want to avoid relying only on instinct. I organize information, find the core issue, and translate that insight into action that produces results.",
+          },
+          experience: {
+            title: "What I Focused On As A Student",
+            intro: "By balancing athletics, academics, and student organization work, I developed the self-management skills to keep delivering under pressure.",
+            badmintonTitle: "Pursuing a state championship in badminton",
+            badmintonText: "As a student athlete, I set a high goal and balanced training, travel, and academics. I achieved a team championship and individual second place.",
+            communityTitle: "Running a Japanese student organization",
+            communityText: "I helped operate a California-based Japanese student organization built around democratizing information so international students would not miss meaningful opportunities.",
+            managementTitle: "Self-management in a high-pressure environment",
+            managementText: "I broke small pockets of time between practice and travel into specific tasks such as research, meeting coordination, and social media updates. This routine helped me complete organization work without delays.",
+          },
+          growth: {
+            title: "How I Work On My Weakness",
+            body: "Because thinking deeply has become a habit, I can sometimes become too cautious and move slowly. I now set a personal rule to act quickly at about 60 percent completion, balancing analysis quality with speed.",
+          },
+          vision: {
+            title: "What I Want To Do Next",
+            body: "Living in Silicon Valley has exposed me to fast-moving technology and people who keep challenging themselves. I want to connect advanced technology and ideas to practical problem solving, and eventually become a bridge between Japan and the world.",
+          },
+          skills: {
+            title: "Experience, Skills & Interests",
+            experienceTitle: "Experience",
+            studyAbroad: "Study Abroad",
+            athletics: "Athletics",
+            studentOrg: "Student Organization",
+            volunteer: "Volunteer",
+            club: "Club Activities",
+            partTime: "Part-time Work",
+            skillsTitle: "Skills",
+            programming: "Programming Basics",
+            analysis: "Analysis",
+            strategy: "Strategic Planning",
+            taskManagement: "Task Management",
+            rolesTitle: "Roles of Interest",
+            marketer: "Marketer",
+            scientist: "Scientist",
+            analyst: "Analyst",
+          },
+          profile: {
+            title: "Basic Information",
+            nameLabel: "Name",
+            nameValue: "Risa Ohara",
+            birthLabel: "Date of Birth",
+            birthValue: "February 19, 2003",
+            schoolLabel: "School",
+            preferenceLabel: "Preference",
+            preferenceValue: "Long-term internship, around 4 days and 35 hours per week, available for 2 to 3 months",
+            stationLabel: "Nearest Station",
+            stationValue: "Gotanda Station (JR Yamanote Line)",
+          },
+          footer: { top: "Back to top" },
+          labels: {
+            top: "Back to top",
+            nav: "Page navigation",
+            switch: "Language switch",
+            highlights: "Profile highlights",
+            summary: "Profile summary",
+          },
+        },
+      };
+
+      const getValue = (source, path) => path.split(".").reduce((value, key) => value?.[key], source);
+
+      const setLanguage = (lang) => {
+        const dictionary = translations[lang] || translations.ja;
+        document.documentElement.lang = lang;
+        document.title = dictionary.meta.title;
+        document.querySelector('meta[name="description"]').setAttribute("content", dictionary.meta.description);
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const value = getValue(dictionary, element.dataset.i18n);
+          if (value) element.textContent = value;
+        });
+        document.querySelector(".brand").setAttribute("aria-label", dictionary.labels.top);
+        document.querySelector(".nav").setAttribute("aria-label", dictionary.labels.nav);
+        document.querySelector(".language-switch").setAttribute("aria-label", dictionary.labels.switch);
+        document.querySelector(".hero-meta").setAttribute("aria-label", dictionary.labels.highlights);
+        document.querySelector("#summary").setAttribute("aria-label", dictionary.labels.summary);
+        document.querySelectorAll(".lang-button").forEach((button) => {
+          const isActive = button.dataset.lang === lang;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+      };
+
+      document.querySelectorAll(".lang-button").forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+
+      setLanguage("ja");
+    </script>
   </body>
 </html>

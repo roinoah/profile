@@ -74,6 +74,13 @@ a {
   box-shadow: 0 8px 20px rgba(18, 63, 55, 0.2);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +98,36 @@ a {
 .nav a:hover {
   color: var(--green-dark);
   background: rgba(18, 63, 55, 0.08);
+}
+
+.language-switch {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(42px, 1fr));
+  gap: 3px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(18, 63, 55, 0.16);
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(23, 33, 42, 0.07);
+}
+
+.lang-button {
+  min-height: 32px;
+  padding: 4px 10px;
+  color: var(--green-dark);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.lang-button.is-active {
+  color: var(--white);
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  box-shadow: 0 8px 16px rgba(18, 63, 55, 0.18);
 }
 
 .hero {
@@ -646,6 +683,12 @@ dd {
     gap: 12px;
   }
 
+  .header-actions {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .hero,
   .split,
   .contact {
@@ -669,8 +712,18 @@ dd {
 }
 
 @media (max-width: 560px) {
+  .header-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .nav {
     gap: 10px 14px;
+  }
+
+  .language-switch {
+    width: 100%;
+    max-width: 196px;
   }
 
   .hero-actions,
@@ -711,6 +764,7 @@ dd {
   .site-header,
   .hero-visual,
   .hero-actions,
+  .language-switch,
   .footer {
     display: none;
   }
