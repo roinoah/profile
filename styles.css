@@ -192,129 +192,7 @@ a {
   background-position: center;
 }
 
-.court-lines {
-  position: absolute;
-  inset: 58px 64px 98px 52px;
-  border: 3px solid rgba(255, 255, 255, 0.46);
-  border-radius: 2px;
-}
 
-.court-lines::before,
-.court-lines::after {
-  position: absolute;
-  content: "";
-  background: rgba(255, 255, 255, 0.48);
-}
-
-.court-lines::before {
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 3px;
-}
-
-.court-lines::after {
-  top: 0;
-  left: 50%;
-  width: 3px;
-  height: 100%;
-}
-
-.profile-orbit {
-  position: absolute;
-  right: 30px;
-  bottom: 34px;
-  display: grid;
-  gap: 10px;
-}
-
-.profile-orbit span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 38px;
-  padding: 7px 16px;
-  color: var(--green-dark);
-  background: rgba(255, 250, 242, 0.94);
-  border: 1px solid rgba(255, 241, 221, 0.9);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  box-shadow: 0 10px 24px rgba(118, 138, 113, 0.18);
-}
-
-.shuttle {
-  position: absolute;
-  top: 82px;
-  right: 88px;
-  width: 96px;
-  height: 116px;
-  transform: rotate(28deg);
-}
-
-.shuttle::before {
-  position: absolute;
-  right: 22px;
-  bottom: 0;
-  width: 34px;
-  height: 28px;
-  content: "";
-  background: #f8efe0;
-  border: 2px solid rgba(118, 138, 113, 0.3);
-  border-radius: 50% 50% 46% 46%;
-}
-
-.shuttle span {
-  position: absolute;
-  bottom: 22px;
-  width: 20px;
-  height: 92px;
-  transform-origin: bottom;
-  background: rgba(255, 255, 255, 0.82);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-}
-
-.shuttle span:nth-child(1) {
-  left: 16px;
-  transform: rotate(-18deg);
-}
-
-.shuttle span:nth-child(2) {
-  left: 38px;
-}
-
-.shuttle span:nth-child(3) {
-  left: 60px;
-  transform: rotate(18deg);
-}
-
-.score-card {
-  position: absolute;
-  left: 34px;
-  bottom: 34px;
-  max-width: 240px;
-  padding: 16px 18px;
-  color: var(--ink);
-  background: rgba(255, 250, 242, 0.92);
-  border: 1px solid rgba(255, 241, 221, 0.88);
-  border-radius: 8px;
-  box-shadow: 0 16px 32px rgba(118, 138, 113, 0.22);
-}
-
-.score-label {
-  display: block;
-  color: var(--berry);
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.score-card strong {
-  display: block;
-  font-size: 18px;
-  line-height: 1.35;
-}
 
 .hero-content {
   position: relative;
@@ -809,10 +687,7 @@ dd {
     min-height: 280px;
   }
 
-  .profile-orbit {
-    right: 18px;
-    bottom: 18px;
-  }
+
 
   .timeline-item {
     grid-template-columns: 20px minmax(0, 1fr);
