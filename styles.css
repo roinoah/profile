@@ -463,11 +463,8 @@ h3 {
 }
 
 .experience {
-  color: var(--white);
-  background:
-    linear-gradient(135deg, rgba(118, 138, 113, 0.98), rgba(151, 76, 37, 0.95) 54%, rgba(184, 91, 45, 0.92)),
-    url("data:image/svg+xml,%3Csvg width='900' height='620' viewBox='0 0 900 620' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.08'%3E%3Cpath d='M0 80H900M0 220H900M0 360H900M0 500H900M120 0V620M360 0V620M620 0V620'/%3E%3C/g%3E%3Cpath d='M-80 570C160 420 260 480 430 300S710 80 960 150' fill='none' stroke='%23f2b849' stroke-width='54' stroke-opacity='.18'/%3E%3Cpath d='M-120 180C120 60 280 150 460 120S700 -10 980 60' fill='none' stroke='%23c95d36' stroke-width='48' stroke-opacity='.15'/%3E%3C/svg%3E");
-  background-size: cover;
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--sage), var(--gold) 54%, var(--pink));
 }
 
 .section-heading {
@@ -476,7 +473,7 @@ h3 {
 }
 
 .section-heading p:last-child {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--muted);
   font-size: 17px;
   font-weight: 500;
 }
@@ -507,7 +504,7 @@ h3 {
 }
 
 .timeline-item p {
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
 }
 
 .two-column {
@@ -543,16 +540,13 @@ h3 {
 }
 
 .panel.accent {
-  color: var(--white);
-  background:
-    linear-gradient(135deg, rgba(118, 138, 113, 0.98), rgba(214, 159, 150, 0.92) 48%, rgba(214, 184, 142, 0.9)),
-    url("data:image/svg+xml,%3Csvg width='640' height='420' viewBox='0 0 640 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 360L250 70L410 250L600 30' fill='none' stroke='%23fff' stroke-width='2' stroke-opacity='.16'/%3E%3Cpath d='M80 360H600M80 300H600M80 240H600M80 180H600' stroke='%23fff' stroke-opacity='.08'/%3E%3Ccircle cx='520' cy='90' r='88' fill='%23f2b849' fill-opacity='.18'/%3E%3C/svg%3E");
-  background-size: cover;
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--sage), var(--aqua) 48%, var(--pink));
   border-color: var(--blue);
 }
 
 .panel.accent .section-kicker {
-  color: #ffe2a8;
+  color: var(--berry);
 }
 
 .skills-section {
@@ -669,9 +663,8 @@ dd {
   justify-content: space-between;
   gap: 16px;
   padding: 26px clamp(20px, 5vw, 72px);
-  color: rgba(255, 255, 255, 0.8);
-  background:
-    linear-gradient(135deg, rgba(74, 62, 61, 0.98), rgba(118, 138, 113, 0.96) 42%, rgba(214, 159, 150, 0.92));
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--sage), var(--violet) 42%, var(--pink));
 }
 
 .footer p {
