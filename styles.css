@@ -1,22 +1,22 @@
 :root {
   color-scheme: light;
-  --ink: #4a3e3d;
-  --muted: #8b7d7b;
-  --line: #e8dcd8;
-  --paper: #fcf6f4;
+  --ink: #4f4b4d;
+  --muted: #8b8387;
+  --line: #dacfd6;
+  --paper: #fbf9fa;
   --white: #ffffff;
-  --green: #a4b3a1;
-  --green-dark: #768a71;
-  --coral: #d69f96;
-  --gold: #d6b88e;
-  --blue: #91a8b5;
-  --aqua: #a1c6c2;
-  --berry: #b87b7a;
-  --violet: #a6929c;
-  --sun: #e6c59c;
-  --sage: #dbe4d5;
-  --shadow: 0 28px 74px rgba(118, 138, 113, 0.15);
-  --soft-shadow: 0 20px 48px rgba(118, 138, 113, 0.1);
+  --green: #adc0bb;
+  --green-dark: #819892;
+  --coral: #eecece;
+  --gold: #dacfd6;
+  --blue: #adc0bb;
+  --aqua: #eae0e3;
+  --berry: #dca3a3;
+  --violet: #b5a4af;
+  --sun: #eecece;
+  --sage: #adc0bb;
+  --shadow: 0 28px 74px rgba(173, 192, 187, 0.25);
+  --soft-shadow: 0 20px 48px rgba(173, 192, 187, 0.15);
 }
 
 * {
@@ -192,6 +192,60 @@ a {
   background-position: center;
 }
 
+.profile-orbit {
+  position: absolute;
+  right: 30px;
+  bottom: 34px;
+  display: grid;
+  gap: 10px;
+}
+
+.profile-orbit span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 7px 16px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(173, 192, 187, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.score-card {
+  position: absolute;
+  left: 34px;
+  bottom: 34px;
+  max-width: 240px;
+  padding: 16px 18px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 16px 32px rgba(173, 192, 187, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.score-label {
+  display: block;
+  color: var(--berry);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.score-card strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.35;
+}
 
 
 .hero-content {
@@ -685,6 +739,11 @@ dd {
 
   .hero-visual {
     min-height: 280px;
+  }
+
+  .profile-orbit {
+    right: 18px;
+    bottom: 18px;
   }
 
 
