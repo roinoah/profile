@@ -463,8 +463,8 @@ h3 {
 }
 
 .experience {
-  color: var(--ink);
-  background: linear-gradient(135deg, var(--sage), var(--gold) 54%, var(--pink));
+  color: var(--white);
+  background: linear-gradient(135deg, #a3bacd, #84a2b6);
 }
 
 .section-heading {
@@ -473,7 +473,7 @@ h3 {
 }
 
 .section-heading p:last-child {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 17px;
   font-weight: 500;
 }
@@ -504,7 +504,7 @@ h3 {
 }
 
 .timeline-item p {
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .two-column {
@@ -540,13 +540,13 @@ h3 {
 }
 
 .panel.accent {
-  color: var(--ink);
-  background: linear-gradient(135deg, var(--sage), var(--aqua) 48%, var(--pink));
-  border-color: var(--blue);
+  color: var(--white);
+  background: linear-gradient(135deg, #a3bacd, #84a2b6);
+  border-color: #84a2b6;
 }
 
 .panel.accent .section-kicker {
-  color: var(--berry);
+  color: #ebf3f7;
 }
 
 .skills-section {
@@ -663,8 +663,8 @@ dd {
   justify-content: space-between;
   gap: 16px;
   padding: 26px clamp(20px, 5vw, 72px);
-  color: var(--ink);
-  background: linear-gradient(135deg, var(--sage), var(--violet) 42%, var(--pink));
+  color: var(--white);
+  background: linear-gradient(135deg, #9bb2c6, #7d9bae);
 }
 
 .footer p {
