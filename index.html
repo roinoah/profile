@@ -46,6 +46,8 @@
           <div class="hero-slider" id="hero-slider">
             <!-- ⬇︎ JSで自動的に画像が追加されます (Images are dynamically added by JS) ⬇︎ -->
           </div>
+          <button class="slider-btn prev-btn" id="slide-prev" aria-label="Previous image">&#10094;</button>
+          <button class="slider-btn next-btn" id="slide-next" aria-label="Next image">&#10095;</button>
           <div class="score-card">
             <span class="score-label" data-i18n="hero.scoreLabel">State Champion Goal</span>
             <strong data-i18n="hero.score">Team 1st / Individual 2nd</strong>
@@ -479,13 +481,34 @@
 
       // スライドショーの切り替えロジック
       const slides = document.querySelectorAll(".hero-slide");
+      const btnPrev = document.getElementById("slide-prev");
+      const btnNext = document.getElementById("slide-next");
+
       if (slides.length > 1) {
         let currentSlide = 0;
-        setInterval(() => {
+        let slideInterval;
+
+        const showSlide = (index) => {
           slides[currentSlide].classList.remove("active");
-          currentSlide = (currentSlide + 1) % slides.length;
+          currentSlide = (index + slides.length) % slides.length;
           slides[currentSlide].classList.add("active");
-        }, 4000);
+        };
+
+        const nextSlide = () => showSlide(currentSlide + 1);
+        const prevSlide = () => showSlide(currentSlide - 1);
+
+        const startSlider = () => {
+          clearInterval(slideInterval);
+          slideInterval = setInterval(nextSlide, 4000);
+        };
+
+        btnNext.addEventListener("click", () => { nextSlide(); startSlider(); });
+        btnPrev.addEventListener("click", () => { prevSlide(); startSlider(); });
+
+        startSlider();
+      } else {
+        if(btnPrev) btnPrev.style.display = 'none';
+        if(btnNext) btnNext.style.display = 'none';
       }
     </script>
   </body>
