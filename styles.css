@@ -184,12 +184,23 @@ a {
   display: none;
 }
 
-.hero-photo {
+.hero-slider {
   position: absolute;
   inset: 0;
-  background: url('profile-photo.jpg');
+  background: var(--paper);
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
 }
 
 .profile-orbit {
