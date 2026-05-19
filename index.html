@@ -43,12 +43,8 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-visual" aria-hidden="true">
-          <div class="hero-slider">
-            <div class="hero-slide active" style="background-image: url('slide1.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('slide2.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('slide3.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('slide4.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('slide5.jpg')"></div>
+          <div class="hero-slider" id="hero-slider">
+            <!-- ⬇︎ JSで自動的に画像が追加されます (Images are dynamically added by JS) ⬇︎ -->
           </div>
           <div class="score-card">
             <span class="score-label" data-i18n="hero.scoreLabel">State Champion Goal</span>
@@ -460,7 +456,28 @@
 
       setLanguage("ja");
 
-      // Slideshow logic
+      // ==========================================
+      // 【スライドショーの設定 (Slideshow Settings)】
+      // ここに表示したい画像のファイル名を書いてください！順番を変えたり、削除・追加が簡単にできます。
+      // ==========================================
+      const slideImages = [
+        "profile-photo.jpg",  // 元々のプロフィール写真
+        "slide1.jpg",         // エッフェル塔
+        "slide2.jpg",         // バドミントン試合
+        "slide3.jpg",         // 賞状
+        "slide5.jpg"          // チーム写真
+      ];
+
+      // スライドを自動生成
+      const sliderContainer = document.getElementById("hero-slider");
+      slideImages.forEach((imgSrc, index) => {
+        const slide = document.createElement("div");
+        slide.className = "hero-slide" + (index === 0 ? " active" : "");
+        slide.style.backgroundImage = `url('${imgSrc}')`;
+        sliderContainer.appendChild(slide);
+      });
+
+      // スライドショーの切り替えロジック
       const slides = document.querySelectorAll(".hero-slide");
       if (slides.length > 1) {
         let currentSlide = 0;
